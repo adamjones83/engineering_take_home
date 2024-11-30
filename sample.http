@@ -1,0 +1,30 @@
+### Sample GET request
+GET http://localhost:3000/buildings?page=2
+
+### Sample POST request
+POST /buildings HTTP/1.1
+Content-Type: application/json
+Host: localhost:3000
+
+{
+  "client_name": "client 1",
+  "address": "6598 Wells Point Pass",
+  "state": "TX",
+  "zip": "78705",
+  "Category": "Apartment",
+  "Lot Size (sqft)": 212.5
+}
+
+### Sample PUT request
+PUT /buildings/318 HTTP/1.1
+Content-Type: application/json
+Host: localhost:3000
+
+{
+  "client_name": "client 1",
+  "address": "6598 Wells Point Pass",
+  "state": "TX",
+  "zip": "78705",
+  "Category": "Condo",
+  "Lot Size (sqft)": "14"
+}
